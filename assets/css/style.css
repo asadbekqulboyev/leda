@@ -516,6 +516,9 @@
 .membership_top .section_title {
   padding-left: 175px;
 }
+.membership_items {
+  margin-top: 64px;
+}
 .membership_item {
   width: calc(33.33% - 10px);
   background: #fae7cb;
