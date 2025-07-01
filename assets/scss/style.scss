@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@font-face {
+  font-family: "TT Backwards Sans Trial";
+  src: url("../fonts/ttThin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Backwards Sans Trial";
+  src: url("../fonts/ttLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Backwards Sans Trial";
+  src: url("../fonts/ttRegular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Backwards Sans Trial";
+  src: url("../fonts/ttBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Backwards Sans Trial";
+  src: url("../fonts/ttBlack.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tartuffo_Trial";
+  src: url("../fonts/Tartuffo_Trial-RegularItalic.otf") format("opentype");
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+// sections
+@import "header";
+@import "hero";
+@import "comunity";
+body {
+  font-family: "TT Backwards Sans Trial";
+  background: #fff;
+}
+// .wrapper {
+//   overflow: visible;
+// }
+.container {
+  width: 100%;
+  max-width: 1824px;
+  margin: 0 auto;
+  padding: 0 24px;
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+}
+.button {
+  background: #ff7e32;
+  min-width: 220px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center  ;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  text-align: center;
+  line-height: 0;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: 3px;
+    height: 100%;
+    background: #ffffff;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  &::before {
+    left: auto;
+    right: 16px;
+  }
+}
+// flex
+.flex {
+  display: flex;
+
+  &.between {
+    justify-content: space-between;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.end {
+    justify-content: flex-end;
+  }
+
+  &.start {
+    justify-content: flex-start;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.a_center {
+    align-items: center;
+  }
+
+  &.a_start {
+    align-items: flex-start;
+  }
+
+  &.a_end {
+    align-items: flex-end;
+  }
+}
+
+.section {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+// .hero {
+//   background: crimson;
+//   z-index: 1;
+// }
+// .blue {
+//   background: dodgerblue;
+//   z-index: 2;
+// }
+// .green {
+//   background: seagreen;
+//   z-index: 3;
+// }
+// .orange {
+//   background: orange;
+//   z-index: 4;
+// }
+.line_content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .line {
+    overflow: hidden;
+    height: 404px;
+    width: 8px;
+    background: #004231;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    top: -280px;
+    margin: 0px auto;
+    .white_line {
+      height: 280px;
+      width: 8px;
+      background: #fff;
+      position: sticky;
+      top: 0;
+    }
+  }
+}
