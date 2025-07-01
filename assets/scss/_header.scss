@@ -42,6 +42,9 @@
     }
   }
   &.header_comunity {
+    svg path {
+      fill: #004231;
+    }
     a:not(.button) {
       color: #004231;
     }

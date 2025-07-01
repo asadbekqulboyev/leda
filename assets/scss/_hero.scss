@@ -5,7 +5,9 @@
       rgba(0, 0, 0, 0.4) 83.89%
     ),
     linear-gradient(144deg, rgba(0, 0, 0, 0) 39.89%, rgba(0, 0, 0, 0.4) 77.22%);
-
+    &.hero_banner{
+      z-index: 7;
+    }
   .container {
     width: 100%;
     position: absolute;

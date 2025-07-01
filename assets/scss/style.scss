@@ -45,11 +45,14 @@
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 // sections
 @import "header";
 @import "hero";
 @import "comunity";
+@import "comunity_banner";
+@import "membership";
 body {
   font-family: "TT Backwards Sans Trial";
   background: #fff;
@@ -73,7 +76,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  vertical-align: center  ;
+  vertical-align: center;
   color: #fff;
   font-size: 24px;
   font-weight: 700;
@@ -184,4 +187,23 @@ body {
       top: 0;
     }
   }
+}
+.top_title {
+  color: #004231;
+  font-family: "Tartuffo_Trial";
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 90px;
+  .light {
+    color: #fff;
+  }
+}
+.section_title {
+  color: #004231;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px;
+  text-transform: uppercase;
 }
