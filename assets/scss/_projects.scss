@@ -1,0 +1,62 @@
+.projects {
+  padding-top: 120px;
+  &_slider {
+    padding-top: 113px;
+  }
+  &_item {
+    &_tags {
+      gap: 16px;
+      span {
+        border-radius: 19px;
+        background: rgb(255, 255, 255);
+        padding: 5px 13px 6px 17px;
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    }
+    &_img {
+      width: 100%;
+      margin-top: 21px;
+      display: flex;
+      img {
+        border-radius: 59px;
+        overflow: hidden;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    &_title {
+      color: rgb(33, 33, 33);
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 58px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-top: 21px;
+      display: block;
+    }
+    &_link {
+      border-radius: 19px;
+      background: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 29px;
+      letter-spacing: 0px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: fit-content;
+      padding: 10px 23px 9px 9px;
+      margin-top: 13px;
+      img {
+        width: 40px;
+      }
+    }
+  }
+}

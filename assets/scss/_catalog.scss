@@ -1,0 +1,135 @@
+.catalog {
+  padding-top: 207px;
+  &_content {
+    padding-top: 78px;
+    p {
+      color: rgb(255, 255, 255);
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+    &.child2 {
+      margin-top: 155px;
+      .catalog_items {
+        gap: 19px;
+      }
+    }
+    &.child3 {
+      margin-top: 105px;
+      .catalog_items {
+        gap: 19px;
+        
+      }
+    }
+  }
+  &_items {
+    margin-top: 24px;
+  }
+  &_item {
+    border-radius: 35px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    width: calc(25% - 9.5px);
+    min-height: 506px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    &::after,
+    &::before {
+      content: "";
+      width: 42px;
+      height: 43px;
+      position: absolute;
+      border-radius: 28px 0 0 0;
+      border: 4px solid rgb(100, 171, 229);
+      transition: all 0.2s linear;
+    }
+    &::after {
+      top: 12px;
+      left: 18px;
+      border-right: 0;
+      border-bottom: 0;
+    }
+    &::before {
+      bottom: 12px;
+      right: 18px;
+      border-radius: 0 0 28px 0;
+      border-top: 0;
+      border-left: 0;
+    }
+    &_number {
+      color: rgb(255, 255, 255);
+      font-size: 64px;
+      font-weight: 800;
+      line-height: 77px;
+      letter-spacing: 0px;
+      text-align: center;
+      display: none;
+      transition: all 0.2s linear;
+    }
+    .product_swiper {
+      overflow: hidden;
+      width: 100%;
+    }
+    .swiper-slide {
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &_icons {
+      gap: 16px;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 17px;
+      background: rgb(255, 255, 255);
+      padding: 8px 17px;
+      width: 100%;
+      display: none;
+      transition: all 0.2s linear;
+      img {
+        object-fit: contain;
+        max-width: 96px;
+        max-height: 33px;
+      }
+    }
+    &_btns {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      margin: auto;
+      .swiper-button-prev,
+      .swiper-button-next {
+        z-index: 12;
+        color: #fff;
+      }
+    }
+    &:hover {
+      padding: 13px 27px 21px 30px;
+      background: rgb(0, 167, 185);
+      .title_sm {
+        display: none;
+      }
+      .catalog_item_icons {
+        display: flex;
+      }
+      .catalog_item_number {
+        display: block;
+      }
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+    .title_sm {
+      color: rgb(34, 34, 34);
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 29px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+}

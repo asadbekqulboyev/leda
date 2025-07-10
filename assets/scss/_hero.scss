@@ -1,13 +1,10 @@
 .hero {
-  background: linear-gradient(
-      280deg,
-      rgba(0, 0, 0, 0) 53.57%,
-      rgba(0, 0, 0, 0.4) 83.89%
-    ),
-    linear-gradient(144deg, rgba(0, 0, 0, 0) 39.89%, rgba(0, 0, 0, 0.4) 77.22%);
-    &.hero_banner{
-      z-index: 7;
-    }
+  background: url("assets/images/hero_img.png") no-repeat center center;
+  background-size: cover;
+
+  &.hero_banner {
+    z-index: 7;
+  }
   .container {
     width: 100%;
     position: absolute;
@@ -56,5 +53,66 @@
     line-height: 112px; /* 93.333% */
     text-transform: uppercase;
     color: #fff;
+  }
+  &_content {
+    gap: 159px;
+    &_top {
+      padding-top: 432px;
+      gap: 45px;
+      p {
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.8);
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        width: fit-content;
+        padding: 28px 18px;
+        max-width: 414px;
+      }
+      .button {
+        width: fit-content;
+        margin-top: 45px;
+      }
+    }
+    &_bottom {
+      a {
+        border-radius: 45px;
+        background: rgba(0, 0, 0, 0.66);
+        color: rgb(255, 255, 255);
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 44px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding: 17px 23px;
+        display: block;
+        width: fit-content;
+      }
+      &_items {
+        gap: 50px;
+        margin-top: 9px;
+        padding: 29px 55px 30px 35px;
+        background: rgba(0, 0, 0, 0.66);
+        border-radius: 45px;
+
+        .hero_content_bottom_item {
+          border-radius: 30px;
+          background: rgba(0, 209, 226, 0.8);
+          color: rgb(255, 255, 255);
+          font-size: 24px;
+          font-weight: 800;
+          line-height: 29px;
+          letter-spacing: 0px;
+          text-align: center;
+          min-height: 137px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
   }
 }
