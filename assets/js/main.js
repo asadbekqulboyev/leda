@@ -32,6 +32,10 @@ $(document).ready(function(){
             992: {
                 slidesPerView: 3,
                 spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 3.2,
+                spaceBetween: 39,
             }
          
         },

@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --container-width: 1756px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -75,59 +79,9 @@ a {
 }
 
 .hero {
-  background: url("assets/images/hero_img.png") no-repeat center center;
+  background: url("../images/hero_img.png") no-repeat center center;
   background-size: cover;
-}
-.hero.hero_banner {
-  z-index: 7;
-}
-.hero .container {
-  width: 100%;
-  position: absolute;
-  bottom: 80px;
-  left: 0;
-  right: 0;
-  z-index: 12;
-}
-.hero video {
-  width: 100%;
-  height: 100%;
-  max-height: 100vh;
-  object-fit: cover;
-}
-.hero_right {
-  color: #fff;
-  width: fit-content;
-  position: absolute;
-  right: 24px;
-  bottom: 80px;
-}
-.hero_right .top_title {
-  color: #fff;
-  font-family: "Tartuffo_Trial";
-  font-size: 120px;
-  line-height: 112px;
-}
-.hero_right p {
-  color: #fff;
-  font-family: "Inter";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-}
-.hero_right_bottom {
-  padding-left: 101px;
-}
-.hero_title {
-  margin-top: 24px;
-  color: #fff;
-  font-size: 120px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 112px; /* 93.333% */
-  text-transform: uppercase;
-  color: #fff;
+  padding-bottom: 90px;
 }
 .hero_content {
   gap: 159px;
@@ -186,6 +140,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 30px;
 }
 
 .materials {
@@ -622,6 +577,9 @@ a {
 }
 .projects_slider {
   padding-top: 113px;
+  margin-right: calc((100vw - var(--container-width)) / -2);
+  padding-right: calc((100vw - var(--container-width)) / 2);
+  overflow: visible;
 }
 .projects_item_tags {
   gap: 16px;

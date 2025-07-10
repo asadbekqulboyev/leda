@@ -2,6 +2,9 @@
   padding-top: 120px;
   &_slider {
     padding-top: 113px;
+    margin-right: calc((100vw - var(--container-width)) / -2);
+    padding-right: calc((100vw - var(--container-width)) / 2);
+    overflow: visible;
   }
   &_item {
     &_tags {

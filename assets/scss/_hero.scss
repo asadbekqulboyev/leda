@@ -1,59 +1,13 @@
 .hero {
-  background: url("assets/images/hero_img.png") no-repeat center center;
+  background: url("../images/hero_img.png") no-repeat center center;
   background-size: cover;
-
-  &.hero_banner {
-    z-index: 7;
-  }
-  .container {
-    width: 100%;
-    position: absolute;
-    bottom: 80px;
-    left: 0;
-    right: 0;
-    z-index: 12;
-  }
-
-  video {
-    width: 100%;
-    height: 100%;
-    max-height: 100vh;
-    object-fit: cover;
-  }
-  &_right {
-    color: #fff;
-    width: fit-content;
-    position: absolute;
-    right: 24px;
-    bottom: 80px;
-    .top_title {
-      color: #fff;
-      font-family: "Tartuffo_Trial";
-      font-size: 120px;
-      line-height: 112px;
-    }
-    p {
-      color: #fff;
-      font-family: "Inter";
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 32px;
-    }
-    &_bottom {
-      padding-left: 101px;
-    }
-  }
-  &_title {
-    margin-top: 24px;
-    color: #fff;
-    font-size: 120px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 112px; /* 93.333% */
-    text-transform: uppercase;
-    color: #fff;
-  }
+  padding-bottom: 90px;
+  // video {
+  //   width: 100%;
+  //   height: 100%;
+  //   max-height: 100vh;
+  //   object-fit: cover;
+  // }
   &_content {
     gap: 159px;
     &_top {
@@ -111,6 +65,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          padding: 10px 30px;
         }
       }
     }
