@@ -644,9 +644,9 @@ a {
 }
 .projects_item_img img {
   border-radius: 59px;
-  overflow: hidden;
   width: 100%;
-  object-fit: contain;
+  min-height: 555px;
+  object-fit: cover;
 }
 .projects_item_title {
   color: rgb(33, 33, 33);

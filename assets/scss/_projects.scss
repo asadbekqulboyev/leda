@@ -24,9 +24,9 @@
       display: flex;
       img {
         border-radius: 59px;
-        overflow: hidden;
         width: 100%;
-        object-fit: contain;
+        min-height: 555px;
+        object-fit: cover;
       }
     }
     &_title {
