@@ -1,5 +1,5 @@
 :root {
-  --container-width: 1756px;;
+  --container-width: 1756px;
 }
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
@@ -20,6 +20,7 @@ a {
 @import "materials";
 @import "catalog";
 @import "projects";
+@import "footer";
 body {
   font-family: "Inter", sans-serif;
   background: rgb(205, 205, 205);
@@ -46,6 +47,10 @@ body {
   border-radius: 30px;
   background: rgba(0, 209, 226, 0.8);
   padding: 24px 68px;
+  transition: all 0.2s linear;
+  &:hover {
+    background: rgb(0, 209, 226);
+  }
 }
 // flex
 .flex {
@@ -157,6 +162,11 @@ body {
     letter-spacing: 0px;
     text-align: center;
     text-decoration-line: underline;
+    transition: all 0.2s linear;
+    width: fit-content;
+    &:hover {
+      color: rgba(0, 209, 226, 1);
+    }
   }
 }
 .g-20 {

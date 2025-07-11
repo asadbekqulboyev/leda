@@ -8,6 +8,17 @@
   &_logo {
     background: #fff;
     border-radius: 45px;
+    @media (max-width: 1024px) {
+      font-weight: 0 !important;
+      font-size: 0 !important;
+      line-height: 0 !important;
+      border-radius: 29px;
+    }
+    img {
+      @media (max-width: 1024px) {
+        width: 235px;
+      }
+    }
   }
   &_menu {
     gap: 40px;
@@ -19,16 +30,22 @@
       @media (max-width: 1200px) {
         gap: 28px;
       }
+      @media (max-width: 1024px) {
+        gap: 16px;
+      }
     }
   }
   a {
     color: rgb(255, 255, 255);
-    font-family: Inter;
     font-size: 36px;
     font-weight: 800;
     line-height: 44px;
     letter-spacing: 0px;
     text-align: left;
+    @media (max-width: 1024px) {
+      font-size: 24px;
+      font-weight: 700;
+    }
   }
   .hamburger {
     display: flex;
@@ -47,11 +64,16 @@
       background: #000;
     }
   }
-  &_right{
+  &_right {
     gap: 32px;
-    ul{
+    @media (max-width: 1024px) {
+      gap: 12px;
+    }
+    ul {
       gap: 32px;
+      @media (max-width: 1024px) {
+        gap: 12px;
+      }
     }
   }
- 
 }

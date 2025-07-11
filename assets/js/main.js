@@ -21,24 +21,27 @@ $(document).ready(function(){
     // projects_slider
     var projects_slider = new Swiper('.projects_slider', {
         breakpoints: {
-            0: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            992: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-            1024: {
-                slidesPerView: 3.2,
-                spaceBetween: 39,
-            }
-         
+          0: {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 14,
+          },
+          992: {
+            slidesPerView: 2.7,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 2.9,
+            spaceBetween: 24,
+          },
+          1400: {
+            slidesPerView:3.2,
+            spaceBetween: 39,
+          }
         },
-        
-    })
+      })
+      
 })

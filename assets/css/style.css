@@ -29,6 +29,19 @@ a {
   background: #fff;
   border-radius: 45px;
 }
+@media (max-width: 1024px) {
+  .header_logo {
+    font-weight: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    border-radius: 29px;
+  }
+}
+@media (max-width: 1024px) {
+  .header_logo img {
+    width: 235px;
+  }
+}
 .header_menu {
   gap: 40px;
 }
@@ -45,14 +58,24 @@ a {
     gap: 28px;
   }
 }
+@media (max-width: 1024px) {
+  .header_menu ul {
+    gap: 16px;
+  }
+}
 .header a {
   color: rgb(255, 255, 255);
-  font-family: Inter;
   font-size: 36px;
   font-weight: 800;
   line-height: 44px;
   letter-spacing: 0px;
   text-align: left;
+}
+@media (max-width: 1024px) {
+  .header a {
+    font-size: 24px;
+    font-weight: 700;
+  }
 }
 .header .hamburger {
   display: flex;
@@ -74,8 +97,18 @@ a {
 .header_right {
   gap: 32px;
 }
+@media (max-width: 1024px) {
+  .header_right {
+    gap: 12px;
+  }
+}
 .header_right ul {
   gap: 32px;
+}
+@media (max-width: 1024px) {
+  .header_right ul {
+    gap: 12px;
+  }
 }
 
 .hero {
@@ -119,6 +152,10 @@ a {
   padding: 17px 23px;
   display: block;
   width: fit-content;
+  transition: all 0.2s linear;
+}
+.hero_content_bottom a:hover {
+  background: rgb(0, 209, 226);
 }
 .hero_content_bottom_items {
   gap: 50px;
@@ -126,12 +163,20 @@ a {
   padding: 29px 55px 30px 35px;
   background: rgba(0, 0, 0, 0.66);
   border-radius: 45px;
+  align-items: stretch !important;
+  max-width: 1564px;
+}
+@media (max-width: 1400px) {
+  .hero_content_bottom_items {
+    gap: 25px;
+  }
 }
 .hero_content_bottom_items .hero_content_bottom_item {
   border-radius: 30px;
   background: rgba(0, 209, 226, 0.8);
   color: rgb(255, 255, 255);
   font-size: 24px;
+  flex: 1;
   font-weight: 800;
   line-height: 29px;
   letter-spacing: 0px;
@@ -141,6 +186,16 @@ a {
   justify-content: center;
   align-items: center;
   padding: 10px 30px;
+  transition: all 0.2s linear;
+}
+.hero_content_bottom_items .hero_content_bottom_item:hover {
+  background: rgb(0, 209, 226);
+}
+@media (max-width: 1400px) {
+  .hero_content_bottom_items .hero_content_bottom_item {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 .materials {
@@ -519,9 +574,9 @@ a {
 .catalog_item .swiper-slide img {
   width: 100%;
   object-fit: contain;
+  transition: all 0.2s linear;
 }
 .catalog_item_icons {
-  gap: 16px;
   justify-content: space-between;
   align-items: center;
   border-radius: 17px;
@@ -534,7 +589,7 @@ a {
 .catalog_item_icons img {
   object-fit: contain;
   max-width: 96px;
-  max-height: 33px;
+  max-height: 30px;
 }
 .catalog_item_btns {
   position: absolute;
@@ -581,6 +636,12 @@ a {
   padding-right: calc((100vw - var(--container-width)) / 2);
   overflow: visible;
 }
+@media (max-width: 1550px) {
+  .projects_slider {
+    padding-top: 80px;
+    margin-right: 0;
+  }
+}
 .projects_item_tags {
   gap: 16px;
 }
@@ -595,6 +656,11 @@ a {
   letter-spacing: 0px;
   text-align: left;
 }
+@media (max-width: 1550px) {
+  .projects_item_tags span {
+    font-size: 20px;
+  }
+}
 .projects_item_img {
   width: 100%;
   margin-top: 21px;
@@ -606,6 +672,11 @@ a {
   min-height: 555px;
   object-fit: cover;
 }
+@media (max-width: 1550px) {
+  .projects_item_img img {
+    min-height: 362px;
+  }
+}
 .projects_item_title {
   color: rgb(33, 33, 33);
   font-size: 48px;
@@ -615,6 +686,11 @@ a {
   text-align: left;
   margin-top: 21px;
   display: block;
+}
+@media (max-width: 1550px) {
+  .projects_item_title {
+    font-size: 38px;
+  }
 }
 .projects_item_link {
   border-radius: 19px;
@@ -631,9 +707,26 @@ a {
   width: fit-content;
   padding: 10px 23px 9px 9px;
   margin-top: 13px;
+  transition: all 0.2s linear;
+}
+.projects_item_link:hover {
+  background: rgb(0, 167, 185);
+  color: #fff;
+}
+@media (max-width: 1550px) {
+  .projects_item_link {
+    font-size: 20px;
+    gap: 12px;
+  }
 }
 .projects_item_link img {
   width: 40px;
+}
+
+.footer {
+  padding-top: 300px;
+  padding-bottom: 30px;
+  color: #fff;
 }
 
 body {
@@ -667,6 +760,10 @@ body {
   border-radius: 30px;
   background: rgba(0, 209, 226, 0.8);
   padding: 24px 68px;
+  transition: all 0.2s linear;
+}
+.button:hover {
+  background: rgb(0, 209, 226);
 }
 
 .flex {
@@ -755,6 +852,11 @@ body {
   letter-spacing: 0px;
   text-align: center;
   text-decoration-line: underline;
+  transition: all 0.2s linear;
+  width: fit-content;
+}
+.content_top a:hover {
+  color: rgb(0, 209, 226);
 }
 
 .g-20 {

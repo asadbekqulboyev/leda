@@ -76,11 +76,11 @@
       img {
         width: 100%;
         object-fit: contain;
+        transition: all 0.2s linear;
       }
     }
 
     &_icons {
-      gap: 16px;
       justify-content: space-between;
       align-items: center;
       border-radius: 17px;
@@ -92,7 +92,7 @@
       img {
         object-fit: contain;
         max-width: 96px;
-        max-height: 33px;
+        max-height: 30px;
       }
     }
     &_btns {
@@ -109,6 +109,7 @@
     &:hover {
       padding: 13px 27px 21px 30px;
       background: rgb(0, 167, 185);
+      
       .title_sm {
         display: none;
       }
