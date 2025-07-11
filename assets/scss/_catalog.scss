@@ -55,6 +55,9 @@
       }
       .catalog_items {
         gap: 19px;
+        @media (max-width: 1250px) {
+          min-height: fit-content;
+        }
       }
     }
   }

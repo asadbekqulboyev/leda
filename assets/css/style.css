@@ -731,6 +731,11 @@ a {
 .catalog_content.child3 .catalog_items {
   gap: 19px;
 }
+@media (max-width: 1250px) {
+  .catalog_content.child3 .catalog_items {
+    min-height: fit-content;
+  }
+}
 .catalog_items {
   margin-top: 24px;
   transition: all 0.2s linear;
