@@ -152,6 +152,11 @@ a {
   height: 100vh;
   min-height: 932px;
 }
+@media (max-width: 768px) {
+  .hero video {
+    min-height: 1400px;
+  }
+}
 .hero .container {
   position: absolute;
   top: auto;
@@ -162,7 +167,7 @@ a {
 }
 @media (max-width: 768px) {
   .hero .container {
-    BOTTOM: 31%;
+    bottom: 33%;
   }
 }
 .hero_content {

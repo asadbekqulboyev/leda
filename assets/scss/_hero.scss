@@ -7,25 +7,27 @@
     object-fit: cover;
     height: 100vh;
     min-height: 932px;
+    @media (max-width: 768px) {
+      min-height:1400px;
+    }
   }
-  .container{
+  .container {
     position: absolute;
     top: auto;
     left: 0;
     right: 0;
     margin: auto;
     bottom: 90px;
-    @media (max-width:768px) {
-      BOTTOM: 31%;
+    @media (max-width: 768px) {
+     bottom:33%;
     }
   }
   &_content {
-   
     padding: 0 24px;
     justify-content: space-between;
     height: 100%;
     max-height: 685px;
-    
+
     @media (max-width: 992px) {
       gap: 50px;
       padding: 0 15px;
