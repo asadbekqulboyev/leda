@@ -2,12 +2,13 @@
   // background: url("../images/hero_img.png") no-repeat center center;
   background-size: cover;
   padding-bottom: 90px;
-
+  position: relative;
   video {
     position: absolute;
     width: 100%;
     object-fit: cover;
     z-index: -1;
+    height: 100%;
   }
   &_content {
     gap: 159px;

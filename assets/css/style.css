@@ -145,12 +145,14 @@ a {
 .hero {
   background-size: cover;
   padding-bottom: 90px;
+  position: relative;
 }
 .hero video {
   position: absolute;
   width: 100%;
   object-fit: cover;
   z-index: -1;
+  height: 100%;
 }
 .hero_content {
   gap: 159px;
