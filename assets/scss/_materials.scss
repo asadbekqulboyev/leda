@@ -1,9 +1,17 @@
 .materials {
-  padding-top: 71px ;
- 
+  padding-top: 71px;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
   &_items {
     padding-top: 48px;
     gap: 39px 19px;
+    @media (max-width: 768px) {
+      padding-top: 38px;
+    }
+    @media (max-width: 556px) {
+      gap: 19px;
+    }
   }
   &_item {
     max-width: 432px;
@@ -23,7 +31,17 @@
       align-items: center;
       justify-content: center;
       padding: 45px;
-      transition: all .2s linear;
+      transition: all 0.2s linear;
+      @media (max-width: 768px) {
+        font-size: 34px;
+        line-height: normal;
+        padding: 32px;
+        min-height: 170px;
+        height: fit-content;
+      }
+      @media (max-width: 556px) {
+        border-radius: 19px;  
+      }
       &:hover {
         background: rgb(0, 167, 185);
         color: #fff;
@@ -301,6 +319,5 @@
         margin-bottom: 0;
       }
     }
-
   }
 }

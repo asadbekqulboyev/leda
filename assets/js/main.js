@@ -22,7 +22,7 @@ $(document).ready(function(){
     var projects_slider = new Swiper('.projects_slider', {
         breakpoints: {
           0: {
-            slidesPerView: 1.2,
+            slidesPerView: 1.1,
             spaceBetween: 10,
           },
           768: {
