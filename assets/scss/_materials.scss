@@ -1,5 +1,6 @@
 .materials {
   padding-top: 71px;
+  background: rgb(205, 205, 205);
   @media (max-width: 768px) {
     padding-top: 50px;
   }
@@ -40,7 +41,7 @@
         height: fit-content;
       }
       @media (max-width: 556px) {
-        border-radius: 19px;  
+        border-radius: 19px;
       }
       &:hover {
         background: rgb(0, 167, 185);

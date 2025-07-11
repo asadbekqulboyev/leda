@@ -150,7 +150,6 @@ a {
   position: absolute;
   width: 100%;
   object-fit: cover;
-  height: 100%;
   z-index: -1;
 }
 .hero_content {
@@ -314,6 +313,7 @@ a {
 
 .materials {
   padding-top: 71px;
+  background: rgb(205, 205, 205);
 }
 @media (max-width: 768px) {
   .materials {
