@@ -2,6 +2,11 @@
   padding-top: 207px;
   &_content {
     padding-top: 78px;
+    &.first {
+      .catalog_items {
+        min-height: 561px;
+      }
+    }
     p {
       color: rgb(255, 255, 255);
       font-size: 24px;
@@ -20,12 +25,12 @@
       margin-top: 105px;
       .catalog_items {
         gap: 19px;
-        
       }
     }
   }
   &_items {
     margin-top: 24px;
+    transition: all 0.2s linear;
   }
   &_item {
     border-radius: 35px;
@@ -34,6 +39,7 @@
     width: calc(25% - 9.5px);
     min-height: 506px;
     transition: all 0.2s linear;
+    max-height: 554px;
     cursor: pointer;
     &::after,
     &::before {
@@ -109,7 +115,6 @@
     &:hover {
       padding: 13px 27px 21px 30px;
       background: rgb(0, 167, 185);
-      
       .title_sm {
         display: none;
       }

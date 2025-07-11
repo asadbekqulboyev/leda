@@ -503,6 +503,9 @@ a {
 .catalog_content {
   padding-top: 78px;
 }
+.catalog_content.first .catalog_items {
+  min-height: 561px;
+}
 .catalog_content p {
   color: rgb(255, 255, 255);
   font-size: 24px;
@@ -525,6 +528,7 @@ a {
 }
 .catalog_items {
   margin-top: 24px;
+  transition: all 0.2s linear;
 }
 .catalog_item {
   border-radius: 35px;
@@ -533,6 +537,7 @@ a {
   width: calc(25% - 9.5px);
   min-height: 506px;
   transition: all 0.2s linear;
+  max-height: 554px;
   cursor: pointer;
 }
 .catalog_item::after, .catalog_item::before {
