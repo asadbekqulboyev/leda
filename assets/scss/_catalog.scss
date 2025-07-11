@@ -60,10 +60,15 @@
   }
   &_items {
     margin-top: 24px;
+
     transition: all 0.2s linear;
+    min-height: 561px;
     @media (max-width: 1280px) {
       flex-wrap: wrap;
       gap: 16px 0;
+    }
+    @media (max-width: 1250px) {
+      min-height: 1059px;
     }
   }
   &_item {

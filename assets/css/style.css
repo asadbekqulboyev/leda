@@ -734,11 +734,17 @@ a {
 .catalog_items {
   margin-top: 24px;
   transition: all 0.2s linear;
+  min-height: 561px;
 }
 @media (max-width: 1280px) {
   .catalog_items {
     flex-wrap: wrap;
     gap: 16px 0;
+  }
+}
+@media (max-width: 1250px) {
+  .catalog_items {
+    min-height: 1059px;
   }
 }
 .catalog_item {
