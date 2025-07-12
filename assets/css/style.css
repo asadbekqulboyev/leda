@@ -825,6 +825,11 @@ a {
   overflow: hidden;
   width: 100%;
 }
+.catalog_item .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .catalog_item .swiper-slide img {
   width: 100%;
   object-fit: contain;
@@ -868,6 +873,11 @@ a {
 }
 .catalog_item:hover .title_sm {
   display: none;
+}
+.catalog_item:hover .swiper-slide img {
+  width: 86%;
+  object-fit: contain;
+  transition: all 0.2s linear;
 }
 .catalog_item:hover .catalog_item_icons {
   display: flex;

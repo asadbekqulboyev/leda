@@ -139,6 +139,9 @@
     }
 
     .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img {
         width: 100%;
         object-fit: contain;
@@ -181,6 +184,13 @@
       }
       .title_sm {
         display: none;
+      }
+      .swiper-slide  {
+        img {
+          width: 86%;
+          object-fit: contain;
+          transition: all 0.2s linear;
+        }
       }
       .catalog_item_icons {
         display: flex;
